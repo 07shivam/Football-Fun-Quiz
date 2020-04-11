@@ -1,0 +1,49 @@
+Create database quizbase;
+Use quizbase;
+Create table questions(
+Qid int(260) auto_increment not null primary key,
+Question varchar(200),
+Ans_id int(260));
+
+Create table answers (
+Aid int(250) auto_increment not null primary key,
+Anser varchar(250),	
+Ans_id int(260));
+
+Create table user(
+Uid int(250) primary key auto_increment not null,
+Username varchar(250),
+Totalques int(250),
+Answercorret int(250));
+
+Insert into questions values (1, “  Who has won the FIFA World Cup 2018 ? “ , 1);
+Insert into questions values (2, “  Who has won the most Ballon Dor ? “ , 5);
+Insert into questions values (3, “  Who is the captain of Indian Football Team ? “ , 9);
+Insert into questions values (4, “  What is national sport of japan ? “ , 13);
+Insert into questions values (5, “  Which club has won the most UCL ? “ , 17);
+
+Insert into answers values (1,” France “,1);
+Insert into answers values (2,” India“,1);
+Insert into answers values (3,” Brazil“,1);
+Insert into answers values (4,” Spain“,1);
+
+Insert into answers values (5,” Messi“,2);
+Insert into answers values (6,” Ronaldo“,2);
+Insert into answers values (7,” Kaka“,2);
+Insert into answers values (8,” Zlatan“,2);
+
+Insert into answers values (9,” Sunil Chettri“,3);
+Insert into answers values (10,” Virat Kohli“,3);
+Insert into answers values (11,” MS Dhoni“,3);
+Insert into answers values (12,” Subrato“,3);
+
+Insert into answers values (13,” Sumo Wrestling“,4);
+Insert into answers values (14,” Football“,4);
+Insert into answers values (15,” Baseball“,4);
+Insert into answers values (16,” Hockey“,4);
+
+Insert into answers values (17,” Real Madrid“,5);
+Insert into answers values (18,” Barcelona“,5);
+Insert into answers values (19,” Liverpool“,5);
+Insert into answers values (20,” Manchester United“,5);
+
